@@ -152,7 +152,7 @@ class Twython(EndpointsMixin, object):
             requests_args['params'] = params
         else:
             requests_args.update({
-                'data': params,
+                'json': params,
                 'files': files,
             })
         try:
